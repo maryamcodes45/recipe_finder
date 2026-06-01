@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -15,38 +14,3 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-Recipe Finder (React App):
-A simple and modern Recipe Finder web app built using React. It allows users to search and explore recipes easily.
-
-Features:
-* Search recipes by name
-* View recipe details
-* Explore different meals
-* Clean and responsive UI
-
-Technologies:
-* React.js
-* Vite
-* JavaScript
-* CSS
-* TheMealDB API
-
-Run Project:
-bash
-npm install
-npm run dev
-
-Future Plan:
-* Add MongoDB backend
-* User login/signup
-* Save favorite recipes
-
-Author:
-Maryam Saleem
-BS Computer Science Student
-
-
-This project is part of my learning and will be updated in future.
-
->>>>>>> 0bd32a8d31f1c0ec11f183dbd03aa1c272d73548
