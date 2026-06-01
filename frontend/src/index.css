@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+:root {
+  --primary: #854d0e; 
+  --accent: #eab308;
+  --accent-soft: rgba(234, 179, 8, 0.1);
+  --bg-0: #ffffff;
+  --bg-1: #fffbeb;
+  --bg-2: #fefce8;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --text-on-dark: #ffffff;
+  --card: #ffffff;
+  --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --font: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  min-height: 100vh;
+  color: var(--text-main);
+  background: var(--bg-0);
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+}
+
+.page-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Navbar */
+.pk-nav {
+  background: white;
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid var(--bg-1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.pk-nav__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pk-nav__brand-text {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.pk-nav__links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Hero */
+.pk-hero {
+  padding: 6rem 1.5rem;
+  text-align: center;
+  background: var(--bg-1);
+}
+
+.pk-hero__title {
+  font-size: clamp(2.5rem, 7vw, 4rem);
+  color: var(--primary);
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.hero-sub {
+  color: var(--text-muted);
+  font-size: 1.15rem;
+  max-width: 48ch;
+  margin: 0 auto 2rem;
+}
+
+/* Buttons */
+.btn-primary {
+  padding: 0.75rem 1.75rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  background: var(--accent);
+  color: #422006;
+  cursor: pointer;
+}
+
+.btn-ghost {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--primary);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.pk-region-card {
+  border-radius: var(--radius-lg);
+  background: white;
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+}
+
+.pk-region-card img {
+  display: block;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.pk-region-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(16,24,40,0.12);
+}
+
+.pk-region-card:hover img {
+  transform: scale(1.03);
+  filter: brightness(0.98);
+}
+
+/* Pagination / Chips */
+.pk-chips {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.pk-chips__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.pk-chip {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  font-weight: 700;
+  background: white;
+}
+
+.pk-chip--active {
+  background: var(--accent);
+  color: white;
+}
